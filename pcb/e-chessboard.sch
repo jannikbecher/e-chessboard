@@ -366,7 +366,7 @@ L Connector:Conn_01x02_Male J?
 U 1 1 5E693AB8
 P 10000 5200
 F 0 "J?" H 10108 5381 50  0000 C CNN
-F 1 "e-magnet-2" H 10108 5290 50  0000 C CNN
+F 1 "e-magnet-2" H 10108 5290 50  0001 C CNN
 F 2 "lib_fp:20_15_electromagnet" H 10000 5200 50  0001 C CNN
 F 3 "~" H 10000 5200 50  0001 C CNN
 	1    10000 5200
@@ -377,7 +377,7 @@ L Connector:Conn_01x02_Male J?
 U 1 1 5E693ABE
 P 10000 5650
 F 0 "J?" H 10108 5831 50  0000 C CNN
-F 1 "e-magnet-5" H 10108 5740 50  0000 C CNN
+F 1 "e-magnet-5" H 10108 5740 50  0001 C CNN
 F 2 "lib_fp:20_15_electromagnet" H 10000 5650 50  0001 C CNN
 F 3 "~" H 10000 5650 50  0001 C CNN
 	1    10000 5650
@@ -388,7 +388,7 @@ L Connector:Conn_01x02_Male J?
 U 1 1 5E693AC4
 P 10000 6100
 F 0 "J?" H 10108 6281 50  0000 C CNN
-F 1 "e-magnet-8" H 10108 6190 50  0000 C CNN
+F 1 "e-magnet-8" H 10108 6190 50  0001 C CNN
 F 2 "lib_fp:20_15_electromagnet" H 10000 6100 50  0001 C CNN
 F 3 "~" H 10000 6100 50  0001 C CNN
 	1    10000 6100
@@ -399,7 +399,7 @@ L Connector:Conn_01x02_Male J?
 U 1 1 5E693ACA
 P 9450 5650
 F 0 "J?" H 9558 5831 50  0000 C CNN
-F 1 "e-magnet-4" H 9558 5740 50  0000 C CNN
+F 1 "e-magnet-4" H 9558 5740 50  0001 C CNN
 F 2 "lib_fp:20_15_electromagnet" H 9450 5650 50  0001 C CNN
 F 3 "~" H 9450 5650 50  0001 C CNN
 	1    9450 5650
@@ -410,7 +410,7 @@ L Connector:Conn_01x02_Male J?
 U 1 1 5E693AD0
 P 9450 5200
 F 0 "J?" H 9558 5381 50  0000 C CNN
-F 1 "e-magnet-1" H 9558 5290 50  0000 C CNN
+F 1 "e-magnet-1" H 9558 5290 50  0001 C CNN
 F 2 "lib_fp:20_15_electromagnet" H 9450 5200 50  0001 C CNN
 F 3 "~" H 9450 5200 50  0001 C CNN
 	1    9450 5200
@@ -421,7 +421,7 @@ L Connector:Conn_01x02_Male J?
 U 1 1 5E693AD6
 P 10550 5200
 F 0 "J?" H 10658 5381 50  0000 C CNN
-F 1 "e-magnet-3" H 10658 5290 50  0000 C CNN
+F 1 "e-magnet-3" H 10658 5290 50  0001 C CNN
 F 2 "lib_fp:20_15_electromagnet" H 10550 5200 50  0001 C CNN
 F 3 "~" H 10550 5200 50  0001 C CNN
 	1    10550 5200
@@ -432,7 +432,7 @@ L Connector:Conn_01x02_Male J?
 U 1 1 5E693ADC
 P 9450 6100
 F 0 "J?" H 9558 6281 50  0000 C CNN
-F 1 "e-magnet-7" H 9558 6190 50  0000 C CNN
+F 1 "e-magnet-7" H 9558 6190 50  0001 C CNN
 F 2 "lib_fp:20_15_electromagnet" H 9450 6100 50  0001 C CNN
 F 3 "~" H 9450 6100 50  0001 C CNN
 	1    9450 6100
@@ -443,7 +443,7 @@ L Connector:Conn_01x02_Male J?
 U 1 1 5E693AE2
 P 10550 5650
 F 0 "J?" H 10658 5831 50  0000 C CNN
-F 1 "e-magnet-6" H 10658 5740 50  0000 C CNN
+F 1 "e-magnet-6" H 10658 5740 50  0001 C CNN
 F 2 "lib_fp:20_15_electromagnet" H 10550 5650 50  0001 C CNN
 F 3 "~" H 10550 5650 50  0001 C CNN
 	1    10550 5650
@@ -454,7 +454,7 @@ L Connector:Conn_01x02_Male J?
 U 1 1 5E693AE8
 P 10550 6100
 F 0 "J?" H 10658 6281 50  0000 C CNN
-F 1 "e-magnet-9" H 10658 6190 50  0000 C CNN
+F 1 "e-magnet-9" H 10658 6190 50  0001 C CNN
 F 2 "lib_fp:20_15_electromagnet" H 10550 6100 50  0001 C CNN
 F 3 "~" H 10550 6100 50  0001 C CNN
 	1    10550 6100
@@ -490,7 +490,6 @@ Wire Wire Line
 	10750 5250 10750 5200
 Wire Wire Line
 	10200 5250 10200 5200
-Connection ~ 10200 5250
 Wire Wire Line
 	9650 5250 9650 5200
 Connection ~ 9650 5250
@@ -551,8 +550,6 @@ Wire Wire Line
 	9650 6150 10200 6150
 Wire Wire Line
 	9650 5700 10200 5700
-Wire Wire Line
-	9650 5250 10200 5250
 Wire Wire Line
 	10200 6150 10750 6150
 Wire Wire Line
@@ -1264,4 +1261,196 @@ Text Label 1500 5150 0    50   ~ 0
 DAC1
 Text Label 1500 5250 0    50   ~ 0
 DAC2
+$Comp
+L Device:D D?
+U 1 1 5EA27C27
+P 9900 5250
+F 0 "D?" V 9900 5400 50  0000 R CNN
+F 1 "D" V 9945 5329 50  0001 L CNN
+F 2 "Diode_SMD:D_SMA" H 9900 5250 50  0001 C CNN
+F 3 "http://www.smc-diodes.com/propdf/S1A-S1M%20N0560%20REV.B.pdf" H 9900 5250 50  0001 C CNN
+	1    9900 5250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9650 5250 10200 5250
+Connection ~ 10200 5250
+$Comp
+L Device:D D?
+U 1 1 5EA43EF8
+P 10450 5250
+F 0 "D?" V 10450 5400 50  0000 R CNN
+F 1 "D" V 10495 5329 50  0001 L CNN
+F 2 "Diode_SMD:D_SMA" H 10450 5250 50  0001 C CNN
+F 3 "http://www.smc-diodes.com/propdf/S1A-S1M%20N0560%20REV.B.pdf" H 10450 5250 50  0001 C CNN
+	1    10450 5250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5EA44385
+P 10450 5700
+F 0 "D?" V 10450 5850 50  0000 R CNN
+F 1 "D" V 10495 5779 50  0001 L CNN
+F 2 "Diode_SMD:D_SMA" H 10450 5700 50  0001 C CNN
+F 3 "http://www.smc-diodes.com/propdf/S1A-S1M%20N0560%20REV.B.pdf" H 10450 5700 50  0001 C CNN
+	1    10450 5700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5EA44F68
+P 9900 5700
+F 0 "D?" V 9900 5850 50  0000 R CNN
+F 1 "D" V 9945 5779 50  0001 L CNN
+F 2 "Diode_SMD:D_SMA" H 9900 5700 50  0001 C CNN
+F 3 "http://www.smc-diodes.com/propdf/S1A-S1M%20N0560%20REV.B.pdf" H 9900 5700 50  0001 C CNN
+	1    9900 5700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5EA4556E
+P 9350 5700
+F 0 "D?" V 9350 5850 50  0000 R CNN
+F 1 "D" V 9395 5779 50  0001 L CNN
+F 2 "Diode_SMD:D_SMA" H 9350 5700 50  0001 C CNN
+F 3 "http://www.smc-diodes.com/propdf/S1A-S1M%20N0560%20REV.B.pdf" H 9350 5700 50  0001 C CNN
+	1    9350 5700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5EA45981
+P 9350 6150
+F 0 "D?" V 9350 6300 50  0000 R CNN
+F 1 "D" V 9395 6229 50  0001 L CNN
+F 2 "Diode_SMD:D_SMA" H 9350 6150 50  0001 C CNN
+F 3 "http://www.smc-diodes.com/propdf/S1A-S1M%20N0560%20REV.B.pdf" H 9350 6150 50  0001 C CNN
+	1    9350 6150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5EA45E30
+P 9900 6150
+F 0 "D?" V 9900 6300 50  0000 R CNN
+F 1 "D" V 9945 6229 50  0001 L CNN
+F 2 "Diode_SMD:D_SMA" H 9900 6150 50  0001 C CNN
+F 3 "http://www.smc-diodes.com/propdf/S1A-S1M%20N0560%20REV.B.pdf" H 9900 6150 50  0001 C CNN
+	1    9900 6150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5EA462B8
+P 10450 6150
+F 0 "D?" V 10450 6300 50  0000 R CNN
+F 1 "D" V 10495 6229 50  0001 L CNN
+F 2 "Diode_SMD:D_SMA" H 10450 6150 50  0001 C CNN
+F 3 "http://www.smc-diodes.com/propdf/S1A-S1M%20N0560%20REV.B.pdf" H 10450 6150 50  0001 C CNN
+	1    10450 6150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9350 5400 9650 5400
+Wire Wire Line
+	9650 5400 9650 5300
+Connection ~ 9650 5300
+Wire Wire Line
+	9900 5100 10200 5100
+Wire Wire Line
+	10200 5100 10200 5200
+Connection ~ 10200 5200
+Wire Wire Line
+	10200 5300 10200 5400
+Wire Wire Line
+	10200 5400 9900 5400
+Connection ~ 10200 5300
+Wire Wire Line
+	10450 5400 10750 5400
+Wire Wire Line
+	10750 5400 10750 5300
+Connection ~ 10750 5300
+Wire Wire Line
+	10750 5200 10750 5100
+Wire Wire Line
+	10750 5100 10450 5100
+Connection ~ 10750 5200
+Wire Wire Line
+	10450 5550 10750 5550
+Wire Wire Line
+	10750 5550 10750 5650
+Connection ~ 10750 5650
+Wire Wire Line
+	10750 5750 10750 5850
+Wire Wire Line
+	10750 5850 10450 5850
+Connection ~ 10750 5750
+Wire Wire Line
+	10200 5850 10200 5750
+Wire Wire Line
+	9900 5850 10200 5850
+Connection ~ 10200 5750
+Wire Wire Line
+	10200 5650 10200 5550
+Wire Wire Line
+	10200 5550 9900 5550
+Connection ~ 10200 5650
+Wire Wire Line
+	9350 5850 9650 5850
+Wire Wire Line
+	9650 5850 9650 5750
+Connection ~ 9650 5750
+Wire Wire Line
+	9650 5650 9650 5550
+Wire Wire Line
+	9650 5550 9350 5550
+Connection ~ 9650 5650
+Wire Wire Line
+	9350 6000 9650 6000
+Wire Wire Line
+	9650 6000 9650 6100
+Connection ~ 9650 6100
+Wire Wire Line
+	9350 6300 9650 6300
+Wire Wire Line
+	9650 6300 9650 6200
+Connection ~ 9650 6200
+Wire Wire Line
+	9900 6300 10200 6300
+Wire Wire Line
+	10200 6300 10200 6200
+Connection ~ 10200 6200
+Wire Wire Line
+	10200 6100 10200 6000
+Wire Wire Line
+	10200 6000 9900 6000
+Connection ~ 10200 6100
+Wire Wire Line
+	10450 6000 10750 6000
+Wire Wire Line
+	10750 6000 10750 6100
+Connection ~ 10750 6100
+Wire Wire Line
+	10750 6200 10750 6300
+Wire Wire Line
+	10750 6300 10450 6300
+Connection ~ 10750 6200
+$Comp
+L Device:D D?
+U 1 1 5EA0FF58
+P 9350 5250
+F 0 "D?" V 9350 5400 50  0000 R CNN
+F 1 "D" V 9395 5329 50  0001 L CNN
+F 2 "Diode_SMD:D_SMA" H 9350 5250 50  0001 C CNN
+F 3 "http://www.smc-diodes.com/propdf/S1A-S1M%20N0560%20REV.B.pdf" H 9350 5250 50  0001 C CNN
+	1    9350 5250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9350 5100 9650 5100
+Wire Wire Line
+	9650 5100 9650 5200
+Connection ~ 9650 5200
 $EndSCHEMATC
