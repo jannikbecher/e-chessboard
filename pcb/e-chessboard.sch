@@ -24,4 +24,165 @@ F 3 "" H 2750 2150 50  0001 C CNN
 	1    2750 2050
 	1    0    0    -1  
 $EndComp
+$Comp
+L lib:NCV7608 U?
+U 1 1 5E5912F6
+P 4100 3450
+F 0 "U?" H 4125 4325 50  0000 C CNN
+F 1 "NCV7608" H 4125 4234 50  0000 C CNN
+F 2 "Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm" H 3900 4000 50  0001 C CNN
+F 3 "" H 3900 4000 50  0001 C CNN
+	1    4100 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5E594613
+P 5750 2050
+F 0 "J?" H 5858 2231 50  0000 C CNN
+F 1 "e-magnet-1" H 5858 2140 50  0000 C CNN
+F 2 "lib_fp:20_15_electromagnet" H 5750 2050 50  0001 C CNN
+F 3 "~" H 5750 2050 50  0001 C CNN
+	1    5750 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Fuse F?
+U 1 1 5E594AB1
+P 1200 900
+F 0 "F?" V 1003 900 50  0000 C CNN
+F 1 "Fuse" V 1094 900 50  0000 C CNN
+F 2 "" V 1130 900 50  0001 C CNN
+F 3 "~" H 1200 900 50  0001 C CNN
+	1    1200 900 
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5E595146
+P 750 1100
+F 0 "J?" H 858 1281 50  0000 C CNN
+F 1 "POWER" H 850 950 50  0000 C CNN
+F 2 "" H 750 1100 50  0001 C CNN
+F 3 "~" H 750 1100 50  0001 C CNN
+	1    750  1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E599752
+P 1750 1150
+F 0 "C?" H 1865 1196 50  0000 L CNN
+F 1 "10u" H 1865 1105 50  0000 L CNN
+F 2 "" H 1788 1000 50  0001 C CNN
+F 3 "~" H 1750 1150 50  0001 C CNN
+	1    1750 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 5E599FB4
+P 1450 1150
+F 0 "C?" H 1200 1200 50  0000 L CNN
+F 1 "10uF" H 1150 1100 50  0000 L CNN
+F 2 "" H 1488 1000 50  0001 C CNN
+F 3 "~" H 1450 1150 50  0001 C CNN
+	1    1450 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E59B30B
+P 2100 1150
+F 0 "C?" H 2215 1196 50  0000 L CNN
+F 1 "10u" H 2215 1105 50  0000 L CNN
+F 2 "" H 2138 1000 50  0001 C CNN
+F 3 "~" H 2100 1150 50  0001 C CNN
+	1    2100 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 900  1450 900 
+Wire Wire Line
+	2100 900  2100 1000
+Wire Wire Line
+	1750 1000 1750 900 
+Connection ~ 1750 900 
+Wire Wire Line
+	1750 900  2100 900 
+Wire Wire Line
+	1450 1000 1450 900 
+Connection ~ 1450 900 
+Wire Wire Line
+	1450 900  1750 900 
+$Comp
+L power:+12V #PWR?
+U 1 1 5E5A0DB1
+P 2100 900
+F 0 "#PWR?" H 2100 750 50  0001 C CNN
+F 1 "+12V" H 2115 1073 50  0000 C CNN
+F 2 "" H 2100 900 50  0001 C CNN
+F 3 "" H 2100 900 50  0001 C CNN
+	1    2100 900 
+	1    0    0    -1  
+$EndComp
+Connection ~ 2100 900 
+$Comp
+L power:GND #PWR?
+U 1 1 5E5A132A
+P 2100 1400
+F 0 "#PWR?" H 2100 1150 50  0001 C CNN
+F 1 "GND" H 2105 1227 50  0000 C CNN
+F 2 "" H 2100 1400 50  0001 C CNN
+F 3 "" H 2100 1400 50  0001 C CNN
+	1    2100 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5E5A173E
+P 2100 1400
+F 0 "#FLG?" H 2100 1475 50  0001 C CNN
+F 1 "PWR_FLAG" V 2100 1528 50  0001 L CNN
+F 2 "" H 2100 1400 50  0001 C CNN
+F 3 "~" H 2100 1400 50  0001 C CNN
+	1    2100 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5E5A1BD1
+P 2100 900
+F 0 "#FLG?" H 2100 975 50  0001 C CNN
+F 1 "PWR_FLAG" V 2100 1028 50  0001 L CNN
+F 2 "" H 2100 900 50  0001 C CNN
+F 3 "~" H 2100 900 50  0001 C CNN
+	1    2100 900 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2100 1300 2100 1400
+Wire Wire Line
+	2100 1450 1750 1450
+Connection ~ 2100 1400
+Wire Wire Line
+	2100 1400 2100 1450
+Wire Wire Line
+	1450 1300 1450 1450
+Connection ~ 1450 1450
+Wire Wire Line
+	1450 1450 1050 1450
+Wire Wire Line
+	1750 1300 1750 1450
+Connection ~ 1750 1450
+Wire Wire Line
+	1750 1450 1450 1450
+Wire Wire Line
+	1050 1450 1050 1200
+Wire Wire Line
+	1050 1200 950  1200
+Wire Wire Line
+	950  1100 1050 1100
+Wire Wire Line
+	1050 1100 1050 900 
 $EndSCHEMATC
