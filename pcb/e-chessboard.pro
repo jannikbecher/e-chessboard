@@ -1,4 +1,4 @@
-update=Fr 28 Feb 2020 20:49:13 CET
+update=Sa 29 Feb 2020 08:02:01 CET
 version=1
 last_client=kicad
 [general]
@@ -237,6 +237,39 @@ Enabled=0
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/Default]
 Name=Default
+Clearance=0.2
+TrackWidth=0.25
+ViaDiameter=0.8
+ViaDrill=0.4
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/1]
+Name=Power_12
+Clearance=0.2
+TrackWidth=3
+ViaDiameter=5
+ViaDrill=3
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/2]
+Name=Power_3.3
+Clearance=0.2
+TrackWidth=0.5
+ViaDiameter=0.9
+ViaDrill=0.5
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/3]
+Name=Signal
 Clearance=0.2
 TrackWidth=0.25
 ViaDiameter=0.8
