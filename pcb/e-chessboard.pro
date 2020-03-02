@@ -1,4 +1,4 @@
-update=Sa 29 Feb 2020 08:02:01 CET
+update=Mo 02 Mär 2020 19:13:00 CET
 version=1
 last_client=kicad
 [general]
@@ -25,7 +25,7 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=
+LastNetListRead=e-chessboard.net
 CopperLayerCount=4
 BoardThickness=1.6
 AllowMicroVias=0
@@ -237,39 +237,6 @@ Enabled=0
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/Default]
 Name=Default
-Clearance=0.2
-TrackWidth=0.25
-ViaDiameter=0.8
-ViaDrill=0.4
-uViaDiameter=0.3
-uViaDrill=0.1
-dPairWidth=0.2
-dPairGap=0.25
-dPairViaGap=0.25
-[pcbnew/Netclasses/1]
-Name=Power_12
-Clearance=0.2
-TrackWidth=3
-ViaDiameter=5
-ViaDrill=3
-uViaDiameter=0.3
-uViaDrill=0.1
-dPairWidth=0.2
-dPairGap=0.25
-dPairViaGap=0.25
-[pcbnew/Netclasses/2]
-Name=Power_3.3
-Clearance=0.2
-TrackWidth=0.5
-ViaDiameter=0.9
-ViaDrill=0.5
-uViaDiameter=0.3
-uViaDrill=0.1
-dPairWidth=0.2
-dPairGap=0.25
-dPairViaGap=0.25
-[pcbnew/Netclasses/3]
-Name=Signal
 Clearance=0.2
 TrackWidth=0.25
 ViaDiameter=0.8
