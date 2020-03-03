@@ -1495,36 +1495,36 @@ LDR_ROW2
 Text GLabel 10200 5200 0    50   Input ~ 0
 LDR_ROW1
 Wire Wire Line
-	13150 5200 13150 5450
+	13150 5200 13150 5350
 Wire Wire Line
-	12150 5450 12150 5200
+	12150 5450 12150 5350
 Connection ~ 12150 5200
 Wire Wire Line
 	12150 5200 13150 5200
 Wire Wire Line
-	11150 5450 11150 5200
+	11150 5450 11150 5350
 Wire Wire Line
 	11150 5200 12150 5200
 Wire Wire Line
-	13150 6200 13150 6450
+	13150 6200 13150 6350
 Wire Wire Line
-	12150 6450 12150 6200
+	12150 6450 12150 6350
 Connection ~ 12150 6200
 Wire Wire Line
 	12150 6200 13150 6200
 Wire Wire Line
-	11150 6450 11150 6200
+	11150 6450 11150 6350
 Wire Wire Line
 	11150 6200 12150 6200
 Wire Wire Line
-	13150 7200 13150 7450
+	13150 7200 13150 7350
 Wire Wire Line
-	12150 7450 12150 7200
+	12150 7450 12150 7350
 Connection ~ 12150 7200
 Wire Wire Line
 	12150 7200 13150 7200
 Wire Wire Line
-	11150 7450 11150 7200
+	11150 7450 11150 7350
 Wire Wire Line
 	11150 7200 12150 7200
 Wire Wire Line
@@ -1599,11 +1599,11 @@ Wire Wire Line
 Connection ~ 12950 8150
 Wire Wire Line
 	12950 8150 13950 8150
-Text GLabel 10550 5350 3    50   Output ~ 0
+Text GLabel 11100 5350 0    50   Output ~ 0
 LDR_ADC1
-Text GLabel 10550 6350 3    50   Output ~ 0
+Text GLabel 12100 5350 0    50   Output ~ 0
 LDR_ADC2
-Text GLabel 10550 7350 3    50   Output ~ 0
+Text GLabel 13100 5350 0    50   Output ~ 0
 LDR_ADC3
 $Comp
 L power:+12V #PWR041
@@ -1784,30 +1784,9 @@ Connection ~ 12750 5750
 Wire Wire Line
 	11750 5000 11750 5750
 Connection ~ 11750 5750
-Wire Wire Line
-	10500 5200 10550 5200
 Connection ~ 11150 5200
-Connection ~ 10550 5200
-Wire Wire Line
-	10550 5200 11150 5200
-Wire Wire Line
-	10500 6200 10550 6200
-Wire Wire Line
-	10550 6200 10550 6350
-Wire Wire Line
-	10550 6200 11150 6200
-Connection ~ 10550 6200
 Connection ~ 11150 6200
-Wire Wire Line
-	10500 7200 10550 7200
-Wire Wire Line
-	10550 7200 10550 7350
-Wire Wire Line
-	10550 7200 11150 7200
-Connection ~ 10550 7200
 Connection ~ 11150 7200
-Wire Wire Line
-	10550 5200 10550 5350
 Text GLabel 1050 4700 0    50   Input ~ 0
 LDR_ADC1
 Text GLabel 3500 7600 3    50   Input ~ 0
@@ -2025,4 +2004,67 @@ F 3 "~" H 5800 2050 50  0001 C CNN
 	1    5800 2050
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	10500 5200 11150 5200
+Wire Wire Line
+	11100 5350 11150 5350
+Connection ~ 11150 5350
+Wire Wire Line
+	11150 5350 11150 5200
+Wire Wire Line
+	10500 6200 11150 6200
+Wire Wire Line
+	10500 7200 11150 7200
+Wire Wire Line
+	12100 5350 12150 5350
+Connection ~ 12150 5350
+Wire Wire Line
+	12150 5350 12150 5200
+Wire Wire Line
+	13100 5350 13150 5350
+Connection ~ 13150 5350
+Wire Wire Line
+	13150 5350 13150 5450
+Text GLabel 11100 6350 0    50   Output ~ 0
+LDR_ADC1
+Text GLabel 11100 7350 0    50   Output ~ 0
+LDR_ADC1
+Text GLabel 12100 6350 0    50   Output ~ 0
+LDR_ADC2
+Text GLabel 12100 7350 0    50   Output ~ 0
+LDR_ADC2
+Text GLabel 13100 6350 0    50   Output ~ 0
+LDR_ADC3
+Text GLabel 13100 7350 0    50   Output ~ 0
+LDR_ADC3
+Wire Wire Line
+	12100 7350 12150 7350
+Connection ~ 12150 7350
+Wire Wire Line
+	12150 7350 12150 7200
+Wire Wire Line
+	12100 6350 12150 6350
+Connection ~ 12150 6350
+Wire Wire Line
+	12150 6350 12150 6200
+Wire Wire Line
+	11100 6350 11150 6350
+Connection ~ 11150 6350
+Wire Wire Line
+	11150 6350 11150 6200
+Wire Wire Line
+	11100 7350 11150 7350
+Connection ~ 11150 7350
+Wire Wire Line
+	11150 7350 11150 7200
+Wire Wire Line
+	13100 7350 13150 7350
+Connection ~ 13150 7350
+Wire Wire Line
+	13150 7350 13150 7450
+Wire Wire Line
+	13100 6350 13150 6350
+Connection ~ 13150 6350
+Wire Wire Line
+	13150 6350 13150 6450
 $EndSCHEMATC
