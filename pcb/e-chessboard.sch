@@ -487,7 +487,7 @@ Text GLabel 2800 6500 2    50   Output ~ 0
 MAG_PWM_ROW3
 Text GLabel 9600 2450 2    50   Input ~ 0
 MAG_EN
-Text GLabel 2800 5500 2    50   Output ~ 0
+Text GLabel 2800 6300 2    50   Output ~ 0
 MAG_EN
 Text GLabel 8850 2150 0    50   Input ~ 0
 MOSI
@@ -1038,12 +1038,12 @@ NoConn ~ 1600 5700
 NoConn ~ 1600 4800
 NoConn ~ 2800 4700
 NoConn ~ 2800 4900
-NoConn ~ 2800 5000
+NoConn ~ 2800 5500
 NoConn ~ 2800 5900
 NoConn ~ 2800 6000
 NoConn ~ 2800 6100
 NoConn ~ 2800 6200
-NoConn ~ 2800 6300
+NoConn ~ 2800 5000
 Text GLabel 2800 4600 2    50   Output ~ 0
 UART_TX
 Text GLabel 2800 4800 2    50   Input ~ 0
