@@ -479,11 +479,11 @@ Text GLabel 9600 2250 2    50   Input ~ 0
 MAG_PWM_ROW2
 Text GLabel 9600 2150 2    50   Input ~ 0
 MAG_PWM_ROW3
-Text GLabel 2800 6500 2    50   Output ~ 0
+Text GLabel 2800 6400 2    50   Output ~ 0
 MAG_PWM_ROW1
 Text GLabel 2800 6600 2    50   Output ~ 0
 MAG_PWM_ROW2
-Text GLabel 2800 6400 2    50   Output ~ 0
+Text GLabel 2800 6500 2    50   Output ~ 0
 MAG_PWM_ROW3
 Text GLabel 9600 2450 2    50   Input ~ 0
 MAG_EN
