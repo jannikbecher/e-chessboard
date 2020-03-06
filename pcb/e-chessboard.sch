@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "E-Chessboard"
 Date "2020-02-28"
-Rev "0.1"
+Rev "0.2"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -153,17 +153,6 @@ Wire Wire Line
 	1200 1550 1300 1550
 Wire Wire Line
 	1300 1550 1300 1350
-$Comp
-L RF_Module:ESP32-WROOM-32U U1
-U 1 1 5E5B3231
-P 2200 5700
-F 0 "U1" H 2650 4350 50  0000 C CNN
-F 1 "ESP32-WROOM-32U" H 1700 4350 50  0000 C CNN
-F 2 "RF_Module:ESP32-WROOM-32U" H 2200 4200 50  0001 C CNN
-F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf" H 1900 5750 50  0001 C CNN
-	1    2200 5700
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:C C6
 U 1 1 5E5B8C4E
@@ -498,7 +487,7 @@ Text GLabel 2800 6400 2    50   Output ~ 0
 MAG_PWM_ROW3
 Text GLabel 9600 2450 2    50   Input ~ 0
 MAG_EN
-Text GLabel 2800 5700 2    50   Output ~ 0
+Text GLabel 2800 5500 2    50   Output ~ 0
 MAG_EN
 Text GLabel 8850 2150 0    50   Input ~ 0
 MOSI
@@ -506,7 +495,7 @@ Text GLabel 8850 2050 0    50   Input ~ 0
 SCLK
 Text GLabel 8850 1950 0    50   Input ~ 0
 MAG_CS
-Text GLabel 2800 5500 2    50   Output ~ 0
+Text GLabel 2800 5400 2    50   Output ~ 0
 MAG_CS
 Text GLabel 2800 5300 2    50   Output ~ 0
 SCLK
@@ -1059,308 +1048,14 @@ Text GLabel 2800 4600 2    50   Output ~ 0
 UART_TX
 Text GLabel 2800 4800 2    50   Input ~ 0
 UART_RX
-$Comp
-L lib:NCV7608 U13
-U 1 1 5EEB73E9
-P 13900 2250
-F 0 "U13" H 13925 3125 50  0000 C CNN
-F 1 "NCV7608" H 13925 3034 50  0000 C CNN
-F 2 "Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm" H 13700 2800 50  0001 C CNN
-F 3 "" H 13700 2800 50  0001 C CNN
-	1    13900 2250
-	1    0    0    -1  
-$EndComp
 Text GLabel 9600 2850 2    50   Output ~ 0
 MAG_ROW_3
-$Comp
-L power:+12V #PWR042
-U 1 1 5F4E88F9
-P 14850 2000
-F 0 "#PWR042" H 14850 1850 50  0001 C CNN
-F 1 "+12V" V 14865 2128 50  0000 L CNN
-F 2 "" H 14850 2000 50  0001 C CNN
-F 3 "" H 14850 2000 50  0001 C CNN
-	1    14850 2000
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C C15
-U 1 1 5F4E88FF
-P 14850 1850
-F 0 "C15" H 14700 1850 50  0000 R CNN
-F 1 "100nF" H 14800 1950 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 14888 1700 50  0001 C CNN
-F 3 "~" H 14850 1850 50  0001 C CNN
-	1    14850 1850
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR041
-U 1 1 5F4E8905
-P 14850 1700
-F 0 "#PWR041" H 14850 1450 50  0001 C CNN
-F 1 "GND" H 14855 1527 50  0000 C CNN
-F 2 "" H 14850 1700 50  0001 C CNN
-F 3 "" H 14850 1700 50  0001 C CNN
-	1    14850 1700
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	14300 2000 14850 2000
-Connection ~ 14850 2000
-$Comp
-L power:GND #PWR039
-U 1 1 5F4F6CE9
-P 13550 2500
-F 0 "#PWR039" H 13550 2250 50  0001 C CNN
-F 1 "GND" V 13555 2372 50  0000 R CNN
-F 2 "" H 13550 2500 50  0001 C CNN
-F 3 "" H 13550 2500 50  0001 C CNN
-	1    13550 2500
-	0    1    1    0   
-$EndComp
-Connection ~ 13000 2300
-Wire Wire Line
-	13000 2300 13550 2300
-$Comp
-L Device:C C14
-U 1 1 5F509782
-P 13000 2450
-F 0 "C14" H 12886 2404 50  0000 R CNN
-F 1 "100n" H 12886 2495 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 13038 2300 50  0001 C CNN
-F 3 "~" H 13000 2450 50  0001 C CNN
-	1    13000 2450
-	1    0    0    1   
-$EndComp
-$Comp
-L power:+3.3V #PWR035
-U 1 1 5F509788
-P 13000 2300
-F 0 "#PWR035" H 13000 2150 50  0001 C CNN
-F 1 "+3.3V" V 13015 2428 50  0000 L CNN
-F 2 "" H 13000 2300 50  0001 C CNN
-F 3 "" H 13000 2300 50  0001 C CNN
-	1    13000 2300
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR036
-U 1 1 5F50978E
-P 13000 2600
-F 0 "#PWR036" H 13000 2350 50  0001 C CNN
-F 1 "GND" H 13005 2427 50  0000 C CNN
-F 2 "" H 13000 2600 50  0001 C CNN
-F 3 "" H 13000 2600 50  0001 C CNN
-	1    13000 2600
-	1    0    0    -1  
-$EndComp
-Text GLabel 13550 1900 0    50   Output ~ 0
-LDR_ROW1
-Text GLabel 13550 1600 0    50   Output ~ 0
-LDR_ROW2
-Text GLabel 14300 1600 2    50   Output ~ 0
-LDR_ROW3
-NoConn ~ 14300 2900
-NoConn ~ 14300 2800
-NoConn ~ 14300 2700
-NoConn ~ 14300 2600
-NoConn ~ 14300 2400
-NoConn ~ 14300 2300
-NoConn ~ 14300 2200
-NoConn ~ 14300 2100
-NoConn ~ 14300 1900
-NoConn ~ 14300 1800
-NoConn ~ 13550 2900
-NoConn ~ 13550 2800
-NoConn ~ 13550 2700
-NoConn ~ 13550 2600
-Text GLabel 14300 2500 2    50   Input ~ 0
-LDR_EN
-Text GLabel 2800 7600 3    50   Input ~ 0
-LDR_ADC1
-Text GLabel 3500 7600 3    50   Input ~ 0
-LDR_ADC2
-Text GLabel 1050 4700 0    50   Input ~ 0
-LDR_ADC3
-$Comp
-L Device:D_Zener D5
-U 1 1 5FA01FED
-P 2950 7400
-F 0 "D5" H 2950 7300 50  0000 C CNN
-F 1 "D_Zener" H 2950 7525 50  0001 C CNN
-F 2 "Diode_SMD:D_SOD-110" H 2950 7400 50  0001 C CNN
-F 3 "~" H 2950 7400 50  0001 C CNN
-	1    2950 7400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D_Zener D4
-U 1 1 5FA0001B
-P 2650 7400
-F 0 "D4" H 2650 7300 50  0000 C CNN
-F 1 "D_Zener" H 2650 7525 50  0001 C CNN
-F 2 "Diode_SMD:D_SOD-110" H 2650 7400 50  0001 C CNN
-F 3 "~" H 2650 7400 50  0001 C CNN
-	1    2650 7400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR09
-U 1 1 5FAB8C2C
-P 3100 7400
-F 0 "#PWR09" H 3100 7150 50  0001 C CNN
-F 1 "GND" H 3105 7227 50  0000 C CNN
-F 2 "" H 3100 7400 50  0001 C CNN
-F 3 "" H 3100 7400 50  0001 C CNN
-	1    3100 7400
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+3.3V #PWR05
-U 1 1 5FAB9168
-P 2500 7400
-F 0 "#PWR05" H 2500 7250 50  0001 C CNN
-F 1 "+3.3V" H 2515 7573 50  0000 C CNN
-F 2 "" H 2500 7400 50  0001 C CNN
-F 3 "" H 2500 7400 50  0001 C CNN
-	1    2500 7400
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	2800 7600 2800 7400
-Connection ~ 2800 7400
-Wire Wire Line
-	2800 7400 2800 6800
-Wire Wire Line
-	3500 7600 3500 7150
-Wire Wire Line
-	2800 6700 3500 6700
-$Comp
-L Device:D_Zener D7
-U 1 1 5FB6B807
-P 3650 7150
-F 0 "D7" H 3650 7050 50  0000 C CNN
-F 1 "D_Zener" H 3650 7275 50  0001 C CNN
-F 2 "Diode_SMD:D_SOD-110" H 3650 7150 50  0001 C CNN
-F 3 "~" H 3650 7150 50  0001 C CNN
-	1    3650 7150
-	1    0    0    -1  
-$EndComp
-Connection ~ 3500 7150
-Wire Wire Line
-	3500 7150 3500 6700
-$Comp
-L Device:D_Zener D6
-U 1 1 5FB6BEF0
-P 3350 7150
-F 0 "D6" H 3350 7050 50  0000 C CNN
-F 1 "D_Zener" H 3350 7275 50  0001 C CNN
-F 2 "Diode_SMD:D_SOD-110" H 3350 7150 50  0001 C CNN
-F 3 "~" H 3350 7150 50  0001 C CNN
-	1    3350 7150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR010
-U 1 1 5FB6C3D5
-P 3200 7150
-F 0 "#PWR010" H 3200 7000 50  0001 C CNN
-F 1 "+3.3V" H 3215 7323 50  0000 C CNN
-F 2 "" H 3200 7150 50  0001 C CNN
-F 3 "" H 3200 7150 50  0001 C CNN
-	1    3200 7150
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR011
-U 1 1 5FB6C8D2
-P 3800 7150
-F 0 "#PWR011" H 3800 6900 50  0001 C CNN
-F 1 "GND" H 3805 6977 50  0000 C CNN
-F 2 "" H 3800 7150 50  0001 C CNN
-F 3 "" H 3800 7150 50  0001 C CNN
-	1    3800 7150
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1050 4700 1250 4700
-$Comp
-L Device:D_Zener D1
-U 1 1 5FB7A8DD
-P 1250 4550
-F 0 "D1" H 1250 4450 50  0000 C CNN
-F 1 "D_Zener" H 1250 4675 50  0001 C CNN
-F 2 "Diode_SMD:D_SOD-110" H 1250 4550 50  0001 C CNN
-F 3 "~" H 1250 4550 50  0001 C CNN
-	1    1250 4550
-	0    1    1    0   
-$EndComp
-Connection ~ 1250 4700
-Wire Wire Line
-	1250 4700 1600 4700
-$Comp
-L Device:D_Zener D2
-U 1 1 5FB7B0DD
-P 1250 4850
-F 0 "D2" H 1250 4750 50  0000 C CNN
-F 1 "D_Zener" H 1250 4975 50  0001 C CNN
-F 2 "Diode_SMD:D_SOD-110" H 1250 4850 50  0001 C CNN
-F 3 "~" H 1250 4850 50  0001 C CNN
-	1    1250 4850
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+3.3V #PWR01
-U 1 1 5FB7B53F
-P 1250 4400
-F 0 "#PWR01" H 1250 4250 50  0001 C CNN
-F 1 "+3.3V" H 1265 4573 50  0000 C CNN
-F 2 "" H 1250 4400 50  0001 C CNN
-F 3 "" H 1250 4400 50  0001 C CNN
-	1    1250 4400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR02
-U 1 1 5FB7C257
-P 1250 5000
-F 0 "#PWR02" H 1250 4750 50  0001 C CNN
-F 1 "GND" H 1255 4827 50  0000 C CNN
-F 2 "" H 1250 5000 50  0001 C CNN
-F 3 "" H 1250 5000 50  0001 C CNN
-	1    1250 5000
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
 	4050 8450 600  8450
 Wire Notes Line
 	4050 3350 4050 8450
 Wire Notes Line
 	600  3350 600  8450
-Text GLabel 2800 5600 2    50   Output ~ 0
-LDR_CS
-Text GLabel 2800 5800 2    50   Output ~ 0
-LDR_EN
-Text GLabel 13550 2100 0    50   Input ~ 0
-SCLK
-Text GLabel 13550 2200 0    50   Input ~ 0
-MOSI
-Text GLabel 13550 2400 0    50   Output ~ 0
-MISO
-Text GLabel 13550 2000 0    50   Input ~ 0
-LDR_CS
-NoConn ~ 2800 5400
-Wire Notes Line
-	12150 3300 12150 1050
-Wire Notes Line
-	12150 1050 15550 1050
-Wire Notes Line
-	15550 1050 15550 3300
-Wire Notes Line
-	12150 3300 15550 3300
-Text Label 12150 1050 0    50   ~ 0
-LDR_DRIVER
 Wire Notes Line
 	9000 4100 14500 4100
 Text Label 9000 4100 0    50   ~ 0
@@ -1394,83 +1089,12 @@ Wire Notes Line
 	14500 4100 14500 8600
 Wire Notes Line
 	14500 8600 9000 8600
-Connection ~ 10700 5000
-Wire Wire Line
-	11300 4800 11300 5550
-Wire Wire Line
-	12300 4750 12300 5550
-Wire Wire Line
-	13300 4750 13300 5550
-$Comp
-L Device:R R7
-U 1 1 5F462362
-P 11500 8000
-F 0 "R7" V 11600 7950 50  0000 L CNN
-F 1 "300k" V 11500 7900 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 11430 8000 50  0001 C CNN
-F 3 "~" H 11500 8000 50  0001 C CNN
-	1    11500 8000
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	13150 5250 13500 5250
-Wire Wire Line
-	12150 5250 12500 5250
-Wire Wire Line
-	11150 5250 11500 5250
-Text GLabel 13300 4750 1    50   Input ~ 0
+Text GLabel 13300 5200 1    50   Input ~ 0
 MAG_COL_1
 Wire Wire Line
-	11300 5550 11150 5550
+	11300 5550 11200 5550
 Wire Wire Line
-	10700 5000 11700 5000
-Wire Wire Line
-	11700 5000 12700 5000
-Connection ~ 11700 5000
-Text GLabel 10350 5000 0    50   Input ~ 0
-LDR_ROW1
-Wire Wire Line
-	11150 5550 11150 5450
-Connection ~ 11150 5550
-Wire Wire Line
-	12150 5550 12150 5450
-Connection ~ 12150 5550
-Wire Wire Line
-	12300 5550 12150 5550
-Wire Wire Line
-	13150 5550 13150 5450
-Connection ~ 13150 5550
-Wire Wire Line
-	13300 5550 13150 5550
-Wire Wire Line
-	12700 5550 12700 5450
-Connection ~ 12700 5550
-Wire Wire Line
-	12650 5550 12700 5550
-Wire Wire Line
-	12650 5750 12650 5550
-Wire Wire Line
-	11700 5550 11700 5450
-Connection ~ 11700 5550
-Wire Wire Line
-	11650 5750 12650 5750
-Connection ~ 11650 5750
-Wire Wire Line
-	11650 5550 11700 5550
-Wire Wire Line
-	11650 5750 11650 5550
-Wire Wire Line
-	10700 5550 10700 5450
-Connection ~ 10700 5550
-Wire Wire Line
-	10650 5750 11650 5750
-Connection ~ 10650 5750
-Wire Wire Line
-	10650 5550 10700 5550
-Wire Wire Line
-	10650 5750 10650 5550
-Wire Wire Line
-	10350 5750 10650 5750
+	13300 5550 13200 5550
 Wire Wire Line
 	11100 5600 11150 5600
 Wire Wire Line
@@ -1506,127 +1130,20 @@ F 3 "http://www.smc-diodes.com/propdf/S1A-S1M%20N0560%20REV.B.pdf" H 12950 5600 
 	1    12950 5600
 	-1   0    0    1   
 $EndComp
-$Comp
-L lib:MAGNET_LDR U10
-U 1 1 5EEE0F68
-P 12950 5350
-F 0 "U10" H 12950 5350 50  0000 C CNN
-F 1 "MAGNET_LDR" H 12925 5624 50  0001 C CNN
-F 2 "lib_fp:20_15_electromagnet_ldr" H 12900 5850 50  0001 C CNN
-F 3 "" H 12900 5850 50  0001 C CNN
-	1    12950 5350
-	1    0    0    -1  
-$EndComp
-$Comp
-L lib:MAGNET_LDR U7
-U 1 1 5EEE0739
-P 11950 5350
-F 0 "U7" H 11950 5350 50  0000 C CNN
-F 1 "MAGNET_LDR" H 11925 5624 50  0001 C CNN
-F 2 "lib_fp:20_15_electromagnet_ldr" H 11900 5850 50  0001 C CNN
-F 3 "" H 11900 5850 50  0001 C CNN
-	1    11950 5350
-	1    0    0    -1  
-$EndComp
-$Comp
-L lib:MAGNET_LDR U4
-U 1 1 5EEA503C
-P 10950 5350
-F 0 "U4" H 10950 5350 50  0000 C CNN
-F 1 "MAGNET_LDR" H 10925 5624 50  0001 C CNN
-F 2 "lib_fp:20_15_electromagnet_ldr" H 10900 5850 50  0001 C CNN
-F 3 "" H 10900 5850 50  0001 C CNN
-	1    10950 5350
-	1    0    0    -1  
-$EndComp
-Text GLabel 11300 4800 1    50   Input ~ 0
+Text GLabel 11300 5200 1    50   Input ~ 0
 MAG_COL_3
-Text GLabel 12300 4750 1    50   Input ~ 0
+Text GLabel 12300 5200 1    50   Input ~ 0
 MAG_COL_2
-Text GLabel 10350 5750 0    50   Input ~ 0
+Text GLabel 10500 5550 0    50   Input ~ 0
 MAG_ROW_1
-Connection ~ 11300 5550
-Connection ~ 12300 5550
-Connection ~ 13300 5550
-Connection ~ 10700 6000
 Wire Wire Line
-	13500 5250 13500 6250
+	11300 6550 11200 6550
 Wire Wire Line
-	12500 5250 12500 6250
-$Comp
-L Device:R R8
-U 1 1 5F462CD3
-P 12500 8000
-F 0 "R8" V 12600 7950 50  0000 L CNN
-F 1 "300k" V 12500 7900 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 12430 8000 50  0001 C CNN
-F 3 "~" H 12500 8000 50  0001 C CNN
-	1    12500 8000
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	13150 6250 13500 6250
-Wire Wire Line
-	12150 6250 12500 6250
-Wire Wire Line
-	11150 6250 11500 6250
-Wire Wire Line
-	11300 5550 11300 6550
-Wire Wire Line
-	11300 6550 11150 6550
-Wire Wire Line
-	10700 6000 11700 6000
-Wire Wire Line
-	11700 6000 12700 6000
-Connection ~ 11700 6000
-Text GLabel 10350 6000 0    50   Input ~ 0
-LDR_ROW2
-Wire Wire Line
-	11150 6550 11150 6450
-Connection ~ 11150 6550
-Wire Wire Line
-	12150 6550 12150 6450
-Connection ~ 12150 6550
-Wire Wire Line
-	12300 6550 12150 6550
-Wire Wire Line
-	12300 5550 12300 6550
-Wire Wire Line
-	13300 5550 13300 6550
-Wire Wire Line
-	13150 6550 13150 6450
-Connection ~ 13150 6550
-Wire Wire Line
-	13300 6550 13150 6550
+	13300 6550 13200 6550
 Wire Wire Line
 	10700 6550 10700 6600
-Connection ~ 10700 6550
-Wire Wire Line
-	10650 6750 11650 6750
-Connection ~ 10650 6750
-Wire Wire Line
-	10650 6550 10700 6550
-Wire Wire Line
-	10650 6750 10650 6550
-Wire Wire Line
-	11650 6750 12650 6750
-Connection ~ 11650 6750
 Wire Wire Line
 	11700 6550 11700 6600
-Connection ~ 11700 6550
-Wire Wire Line
-	11650 6550 11650 6750
-Wire Wire Line
-	11700 6550 11650 6550
-Wire Wire Line
-	12700 6550 12700 6450
-Connection ~ 12700 6550
-Wire Wire Line
-	12650 6550 12700 6550
-Wire Wire Line
-	12650 6750 12650 6550
-Wire Wire Line
-	10350 6750 10650 6750
 Wire Wire Line
 	13150 6600 13150 6550
 Wire Wire Line
@@ -1638,15 +1155,11 @@ Wire Wire Line
 Wire Wire Line
 	11700 6600 11800 6600
 Wire Wire Line
-	11700 6450 11700 6550
-Wire Wire Line
 	11150 6600 11150 6550
 Wire Wire Line
 	11100 6600 11150 6600
 Wire Wire Line
 	10700 6600 10800 6600
-Wire Wire Line
-	10700 6450 10700 6550
 Wire Wire Line
 	12700 6600 12700 6550
 Wire Wire Line
@@ -1684,128 +1197,20 @@ F 3 "http://www.smc-diodes.com/propdf/S1A-S1M%20N0560%20REV.B.pdf" H 10950 6600 
 	1    10950 6600
 	-1   0    0    1   
 $EndComp
-$Comp
-L lib:MAGNET_LDR U11
-U 1 1 5EEE3694
-P 12950 6350
-F 0 "U11" H 12950 6350 50  0000 C CNN
-F 1 "MAGNET_LDR" H 12925 6624 50  0001 C CNN
-F 2 "lib_fp:20_15_electromagnet_ldr" H 12900 6850 50  0001 C CNN
-F 3 "" H 12900 6850 50  0001 C CNN
-	1    12950 6350
-	1    0    0    -1  
-$EndComp
-$Comp
-L lib:MAGNET_LDR U8
-U 1 1 5EEE30AD
-P 11950 6350
-F 0 "U8" H 11950 6350 50  0000 C CNN
-F 1 "MAGNET_LDR" H 11925 6624 50  0001 C CNN
-F 2 "lib_fp:20_15_electromagnet_ldr" H 11900 6850 50  0001 C CNN
-F 3 "" H 11900 6850 50  0001 C CNN
-	1    11950 6350
-	1    0    0    -1  
-$EndComp
-$Comp
-L lib:MAGNET_LDR U5
-U 1 1 5EEE2254
-P 10950 6350
-F 0 "U5" H 10950 6350 50  0000 C CNN
-F 1 "MAGNET_LDR" H 10925 6624 50  0001 C CNN
-F 2 "lib_fp:20_15_electromagnet_ldr" H 10900 6850 50  0001 C CNN
-F 3 "" H 10900 6850 50  0001 C CNN
-	1    10950 6350
-	1    0    0    -1  
-$EndComp
-Text GLabel 10350 6750 0    50   Input ~ 0
+Text GLabel 10500 6550 0    50   Input ~ 0
 MAG_ROW_2
-Text GLabel 10350 7000 0    50   Input ~ 0
-LDR_ROW3
-Connection ~ 10700 7000
-Connection ~ 13500 6250
-Connection ~ 12500 6250
-Connection ~ 11500 6250
-Connection ~ 11300 6550
-Wire Wire Line
-	10700 7000 11700 7000
-Wire Wire Line
-	11700 7000 12700 7000
-Connection ~ 11700 7000
-Connection ~ 12300 6550
-Connection ~ 13300 6550
-Wire Wire Line
-	13500 7250 13500 7850
-Connection ~ 13500 7250
-Wire Wire Line
-	13500 6250 13500 7250
-Wire Wire Line
-	12500 7250 12500 7850
-Connection ~ 12500 7250
-Wire Wire Line
-	12500 6250 12500 7250
-Connection ~ 11500 7250
-Wire Wire Line
-	11500 7250 11500 7850
-Wire Wire Line
-	12300 6550 12300 7550
-Wire Wire Line
-	13150 7250 13500 7250
-Wire Wire Line
-	12150 7250 12500 7250
-Wire Wire Line
-	11500 6250 11500 7250
-Wire Wire Line
-	11150 7250 11500 7250
-Wire Wire Line
-	11300 6550 11300 7550
 Wire Wire Line
 	11150 7550 11150 7600
-Connection ~ 11150 7550
 Wire Wire Line
-	11300 7550 11150 7550
+	11300 7550 11200 7550
 Wire Wire Line
-	12150 7550 12150 7450
-Connection ~ 12150 7550
-Wire Wire Line
-	12300 7550 12150 7550
-Wire Wire Line
-	13300 6550 13300 7550
-Wire Wire Line
-	13150 7550 13150 7450
-Connection ~ 13150 7550
-Wire Wire Line
-	13300 7550 13150 7550
-Wire Wire Line
-	11150 7450 11150 7550
+	13300 7550 13200 7550
 Wire Wire Line
 	12700 7550 12700 7450
 Connection ~ 12700 7550
 Wire Wire Line
-	12650 7550 12700 7550
-Wire Wire Line
-	12650 7750 12650 7550
-Wire Wire Line
-	11650 7750 12650 7750
-Connection ~ 11650 7750
-Wire Wire Line
 	11700 7550 11700 7600
 Connection ~ 11700 7550
-Wire Wire Line
-	11650 7550 11650 7750
-Wire Wire Line
-	11700 7550 11650 7550
-Wire Wire Line
-	10650 7750 11650 7750
-Connection ~ 10650 7750
-Wire Wire Line
-	10700 7550 10700 7450
-Connection ~ 10700 7550
-Wire Wire Line
-	10650 7550 10650 7750
-Wire Wire Line
-	10700 7550 10650 7550
-Wire Wire Line
-	10350 7750 10650 7750
 Wire Wire Line
 	11700 7600 11800 7600
 Wire Wire Line
@@ -1824,8 +1229,6 @@ Wire Wire Line
 	11700 7450 11700 7550
 Wire Wire Line
 	11100 7600 11150 7600
-Wire Wire Line
-	10700 7600 10700 7550
 Wire Wire Line
 	10800 7600 10700 7600
 $Comp
@@ -1861,148 +1264,8 @@ F 3 "http://www.smc-diodes.com/propdf/S1A-S1M%20N0560%20REV.B.pdf" H 12950 7600 
 	1    12950 7600
 	-1   0    0    1   
 $EndComp
-$Comp
-L lib:MAGNET_LDR U6
-U 1 1 5EEEF3BB
-P 10950 7350
-F 0 "U6" H 10950 7350 50  0000 C CNN
-F 1 "MAGNET_LDR" H 10925 7624 50  0001 C CNN
-F 2 "lib_fp:20_15_electromagnet_ldr" H 10900 7850 50  0001 C CNN
-F 3 "" H 10900 7850 50  0001 C CNN
-	1    10950 7350
-	1    0    0    -1  
-$EndComp
-$Comp
-L lib:MAGNET_LDR U9
-U 1 1 5EEEE949
-P 11950 7350
-F 0 "U9" H 11950 7350 50  0000 C CNN
-F 1 "MAGNET_LDR" H 11925 7624 50  0001 C CNN
-F 2 "lib_fp:20_15_electromagnet_ldr" H 11900 7850 50  0001 C CNN
-F 3 "" H 11900 7850 50  0001 C CNN
-	1    11950 7350
-	1    0    0    -1  
-$EndComp
-$Comp
-L lib:MAGNET_LDR U12
-U 1 1 5EEE439C
-P 12950 7350
-F 0 "U12" H 12950 7350 50  0000 C CNN
-F 1 "MAGNET_LDR" H 12925 7624 50  0001 C CNN
-F 2 "lib_fp:20_15_electromagnet_ldr" H 12900 7850 50  0001 C CNN
-F 3 "" H 12900 7850 50  0001 C CNN
-	1    12950 7350
-	1    0    0    -1  
-$EndComp
-Text GLabel 10350 7750 0    50   Input ~ 0
+Text GLabel 10500 7550 0    50   Input ~ 0
 MAG_ROW_3
-$Comp
-L Device:R R9
-U 1 1 5F463409
-P 13500 8000
-F 0 "R9" V 13600 7950 50  0000 L CNN
-F 1 "300k" V 13500 7900 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 13430 8000 50  0001 C CNN
-F 3 "~" H 13500 8000 50  0001 C CNN
-	1    13500 8000
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	12700 6000 12700 6250
-Wire Wire Line
-	12700 7000 12700 7250
-Wire Wire Line
-	10700 7250 10700 7000
-Wire Wire Line
-	10700 6250 10700 6000
-Wire Wire Line
-	11700 6250 11700 6000
-Wire Wire Line
-	11700 7250 11700 7000
-Wire Wire Line
-	12700 5000 12700 5250
-Text GLabel 13500 4750 1    50   Output ~ 0
-LDR_ADC3
-Wire Wire Line
-	11700 5250 11700 5000
-Text GLabel 12500 4750 1    50   Output ~ 0
-LDR_ADC2
-Wire Wire Line
-	10700 5250 10700 5000
-Text GLabel 11500 4800 1    50   Output ~ 0
-LDR_ADC1
-$Comp
-L power:GND #PWR040
-U 1 1 60481099
-P 14300 1700
-F 0 "#PWR040" H 14300 1450 50  0001 C CNN
-F 1 "GND" V 14305 1572 50  0000 R CNN
-F 2 "" H 14300 1700 50  0001 C CNN
-F 3 "" H 14300 1700 50  0001 C CNN
-	1    14300 1700
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR037
-U 1 1 60481590
-P 13550 1700
-F 0 "#PWR037" H 13550 1450 50  0001 C CNN
-F 1 "GND" V 13555 1572 50  0000 R CNN
-F 2 "" H 13550 1700 50  0001 C CNN
-F 3 "" H 13550 1700 50  0001 C CNN
-	1    13550 1700
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR038
-U 1 1 604819E2
-P 13550 1800
-F 0 "#PWR038" H 13550 1550 50  0001 C CNN
-F 1 "GND" V 13555 1672 50  0000 R CNN
-F 2 "" H 13550 1800 50  0001 C CNN
-F 3 "" H 13550 1800 50  0001 C CNN
-	1    13550 1800
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+12V #PWR034
-U 1 1 604870F3
-P 12500 8300
-F 0 "#PWR034" H 12500 8150 50  0001 C CNN
-F 1 "+12V" H 12515 8473 50  0000 C CNN
-F 2 "" H 12500 8300 50  0001 C CNN
-F 3 "" H 12500 8300 50  0001 C CNN
-	1    12500 8300
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	12500 8300 11500 8300
-Wire Wire Line
-	11500 8300 11500 8150
-Wire Wire Line
-	12500 8300 13500 8300
-Wire Wire Line
-	13500 8300 13500 8150
-Connection ~ 12500 8300
-Wire Wire Line
-	12500 8300 12500 8150
-Wire Wire Line
-	13500 5250 13500 4750
-Connection ~ 13500 5250
-Wire Wire Line
-	12500 5250 12500 4750
-Connection ~ 12500 5250
-Wire Wire Line
-	11500 4800 11500 5250
-Connection ~ 11500 5250
-Wire Wire Line
-	11500 5250 11500 6250
-Wire Wire Line
-	10350 5000 10700 5000
-Wire Wire Line
-	10350 6000 10700 6000
-Wire Wire Line
-	10350 7000 10700 7000
 $Comp
 L Device:D D12
 U 1 1 5EF372F8
@@ -2025,4 +1288,238 @@ F 3 "http://www.smc-diodes.com/propdf/S1A-S1M%20N0560%20REV.B.pdf" H 10950 5600 
 	1    10950 5600
 	-1   0    0    1   
 $EndComp
+NoConn ~ 2800 5800
+NoConn ~ 2800 5700
+NoConn ~ 2800 5600
+$Comp
+L RF_Module:ESP32-WROOM-32U U1
+U 1 1 5E5B3231
+P 2200 5700
+F 0 "U1" H 2650 4350 50  0000 C CNN
+F 1 "ESP32-WROOM-32U" H 1700 4350 50  0000 C CNN
+F 2 "RF_Module:ESP32-WROOM-32U" H 2200 4200 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf" H 1900 5750 50  0001 C CNN
+	1    2200 5700
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1600 4700
+NoConn ~ 2800 6800
+NoConn ~ 2800 6700
+$Comp
+L pspice:INDUCTOR L?
+U 1 1 5E76BC05
+P 10950 5450
+F 0 "L?" H 10950 5665 50  0000 C CNN
+F 1 "INDUCTOR" H 10950 5574 50  0000 C CNN
+F 2 "lib_fp:20_15_electromagnet" H 10950 5450 50  0001 C CNN
+F 3 "~" H 10950 5450 50  0001 C CNN
+	1    10950 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:INDUCTOR L?
+U 1 1 5E76CDCC
+P 11950 5450
+F 0 "L?" H 11950 5665 50  0000 C CNN
+F 1 "INDUCTOR" H 11950 5574 50  0000 C CNN
+F 2 "lib_fp:20_15_electromagnet" H 11950 5450 50  0001 C CNN
+F 3 "~" H 11950 5450 50  0001 C CNN
+	1    11950 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:INDUCTOR L?
+U 1 1 5E76D265
+P 12950 5450
+F 0 "L?" H 12950 5665 50  0000 C CNN
+F 1 "INDUCTOR" H 12950 5574 50  0000 C CNN
+F 2 "lib_fp:20_15_electromagnet" H 12950 5450 50  0001 C CNN
+F 3 "~" H 12950 5450 50  0001 C CNN
+	1    12950 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:INDUCTOR L?
+U 1 1 5E76D75C
+P 10950 6450
+F 0 "L?" H 10950 6665 50  0000 C CNN
+F 1 "INDUCTOR" H 10950 6574 50  0000 C CNN
+F 2 "lib_fp:20_15_electromagnet" H 10950 6450 50  0001 C CNN
+F 3 "~" H 10950 6450 50  0001 C CNN
+	1    10950 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:INDUCTOR L?
+U 1 1 5E76DE5D
+P 11950 6450
+F 0 "L?" H 11950 6665 50  0000 C CNN
+F 1 "INDUCTOR" H 11950 6574 50  0000 C CNN
+F 2 "lib_fp:20_15_electromagnet" H 11950 6450 50  0001 C CNN
+F 3 "~" H 11950 6450 50  0001 C CNN
+	1    11950 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:INDUCTOR L?
+U 1 1 5E76E38E
+P 12950 6450
+F 0 "L?" H 12950 6665 50  0000 C CNN
+F 1 "INDUCTOR" H 12950 6574 50  0000 C CNN
+F 2 "lib_fp:20_15_electromagnet" H 12950 6450 50  0001 C CNN
+F 3 "~" H 12950 6450 50  0001 C CNN
+	1    12950 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:INDUCTOR L?
+U 1 1 5E76E8F6
+P 10950 7450
+F 0 "L?" H 10950 7665 50  0000 C CNN
+F 1 "INDUCTOR" H 10950 7574 50  0000 C CNN
+F 2 "lib_fp:20_15_electromagnet" H 10950 7450 50  0001 C CNN
+F 3 "~" H 10950 7450 50  0001 C CNN
+	1    10950 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:INDUCTOR L?
+U 1 1 5E76F37D
+P 11950 7450
+F 0 "L?" H 11950 7665 50  0000 C CNN
+F 1 "INDUCTOR" H 11950 7574 50  0000 C CNN
+F 2 "lib_fp:20_15_electromagnet" H 11950 7450 50  0001 C CNN
+F 3 "~" H 11950 7450 50  0001 C CNN
+	1    11950 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:INDUCTOR L?
+U 1 1 5E76FF24
+P 12950 7450
+F 0 "L?" H 12950 7665 50  0000 C CNN
+F 1 "INDUCTOR" H 12950 7574 50  0000 C CNN
+F 2 "lib_fp:20_15_electromagnet" H 12950 7450 50  0001 C CNN
+F 3 "~" H 12950 7450 50  0001 C CNN
+	1    12950 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10700 6550 10700 6450
+Connection ~ 10700 6550
+Wire Wire Line
+	11700 6550 11700 6450
+Connection ~ 11700 6550
+Wire Wire Line
+	12700 6550 12700 6450
+Connection ~ 12700 6550
+Wire Wire Line
+	12700 5550 12700 5450
+Connection ~ 12700 5550
+Wire Wire Line
+	11700 5550 11700 5450
+Connection ~ 11700 5550
+Wire Wire Line
+	10700 5550 10700 5450
+Connection ~ 10700 5550
+Wire Wire Line
+	10500 5550 10700 5550
+Wire Wire Line
+	10500 6550 10700 6550
+Wire Wire Line
+	10700 7450 10700 7550
+Wire Wire Line
+	10500 7550 10700 7550
+Connection ~ 10700 7550
+Wire Wire Line
+	10700 7550 10700 7600
+Wire Wire Line
+	11300 5200 11300 5550
+Connection ~ 11300 5550
+Wire Wire Line
+	11300 5550 11300 6550
+Connection ~ 11300 6550
+Wire Wire Line
+	11300 6550 11300 7550
+Wire Wire Line
+	11200 6450 11200 6550
+Connection ~ 11200 6550
+Wire Wire Line
+	11200 6550 11150 6550
+Wire Wire Line
+	11200 5450 11200 5550
+Connection ~ 11200 5550
+Wire Wire Line
+	11200 5550 11150 5550
+Wire Wire Line
+	11300 5550 11700 5550
+Wire Wire Line
+	11300 6550 11700 6550
+Wire Wire Line
+	11200 7450 11200 7550
+Connection ~ 11200 7550
+Wire Wire Line
+	11200 7550 11150 7550
+Wire Wire Line
+	11300 7550 11700 7550
+Connection ~ 11300 7550
+Wire Wire Line
+	12200 7550 12200 7450
+Connection ~ 12200 7550
+Wire Wire Line
+	12200 7550 12150 7550
+Wire Wire Line
+	12200 7550 12300 7550
+Wire Wire Line
+	12200 6450 12200 6550
+Connection ~ 12200 6550
+Wire Wire Line
+	12200 6550 12150 6550
+Wire Wire Line
+	12200 6550 12300 6550
+Wire Wire Line
+	12150 5550 12200 5550
+Wire Wire Line
+	12200 5450 12200 5550
+Connection ~ 12200 5550
+Wire Wire Line
+	12200 5550 12300 5550
+Wire Wire Line
+	13200 5450 13200 5550
+Connection ~ 13200 5550
+Wire Wire Line
+	13200 5550 13150 5550
+Wire Wire Line
+	13200 6450 13200 6550
+Connection ~ 13200 6550
+Wire Wire Line
+	13200 6550 13150 6550
+Wire Wire Line
+	13200 7450 13200 7550
+Connection ~ 13200 7550
+Wire Wire Line
+	13200 7550 13150 7550
+Wire Wire Line
+	13300 7550 13300 6550
+Connection ~ 13300 5550
+Wire Wire Line
+	13300 5550 13300 5200
+Connection ~ 13300 6550
+Wire Wire Line
+	13300 6550 13300 5550
+Connection ~ 12300 7550
+Wire Wire Line
+	12300 7550 12700 7550
+Wire Wire Line
+	12300 5200 12300 5550
+Connection ~ 12300 5550
+Wire Wire Line
+	12300 5550 12700 5550
+Wire Wire Line
+	12300 5550 12300 6550
+Connection ~ 12300 6550
+Wire Wire Line
+	12300 6550 12700 6550
+Wire Wire Line
+	12300 6550 12300 7550
 $EndSCHEMATC
