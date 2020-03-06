@@ -1134,7 +1134,7 @@ Text GLabel 11300 5200 1    50   Input ~ 0
 MAG_COL_3
 Text GLabel 12300 5200 1    50   Input ~ 0
 MAG_COL_2
-Text GLabel 10500 5550 0    50   Input ~ 0
+Text GLabel 10500 5800 0    50   Input ~ 0
 MAG_ROW_1
 Wire Wire Line
 	11300 6550 11200 6550
@@ -1197,7 +1197,7 @@ F 3 "http://www.smc-diodes.com/propdf/S1A-S1M%20N0560%20REV.B.pdf" H 10950 6600 
 	1    10950 6600
 	-1   0    0    1   
 $EndComp
-Text GLabel 10500 6550 0    50   Input ~ 0
+Text GLabel 10500 6800 0    50   Input ~ 0
 MAG_ROW_2
 Wire Wire Line
 	11150 7550 11150 7600
@@ -1264,7 +1264,7 @@ F 3 "http://www.smc-diodes.com/propdf/S1A-S1M%20N0560%20REV.B.pdf" H 12950 7600 
 	1    12950 7600
 	-1   0    0    1   
 $EndComp
-Text GLabel 10500 7550 0    50   Input ~ 0
+Text GLabel 10500 7800 0    50   Input ~ 0
 MAG_ROW_3
 $Comp
 L Device:D D12
@@ -1452,17 +1452,10 @@ Connection ~ 11200 5550
 Wire Wire Line
 	11200 5550 11150 5550
 Wire Wire Line
-	11300 5550 11700 5550
-Wire Wire Line
-	11300 6550 11700 6550
-Wire Wire Line
 	11200 7450 11200 7550
 Connection ~ 11200 7550
 Wire Wire Line
 	11200 7550 11150 7550
-Wire Wire Line
-	11300 7550 11700 7550
-Connection ~ 11300 7550
 Wire Wire Line
 	12200 7550 12200 7450
 Connection ~ 12200 7550
@@ -1507,19 +1500,57 @@ Wire Wire Line
 Connection ~ 13300 6550
 Wire Wire Line
 	13300 6550 13300 5550
-Connection ~ 12300 7550
-Wire Wire Line
-	12300 7550 12700 7550
 Wire Wire Line
 	12300 5200 12300 5550
 Connection ~ 12300 5550
 Wire Wire Line
-	12300 5550 12700 5550
-Wire Wire Line
 	12300 5550 12300 6550
 Connection ~ 12300 6550
 Wire Wire Line
-	12300 6550 12700 6550
-Wire Wire Line
 	12300 6550 12300 7550
+Wire Wire Line
+	10500 6800 10500 6550
+Wire Wire Line
+	10500 5800 10500 5550
+Wire Wire Line
+	10500 7800 10500 7550
+Wire Wire Line
+	10500 7800 11500 7800
+Wire Wire Line
+	11500 7800 11500 7550
+Wire Wire Line
+	11500 7550 11700 7550
+Wire Wire Line
+	10500 6800 11500 6800
+Wire Wire Line
+	11500 6800 11500 6550
+Wire Wire Line
+	11500 6550 11700 6550
+Wire Wire Line
+	10500 5800 11500 5800
+Wire Wire Line
+	11500 5800 11500 5550
+Wire Wire Line
+	11500 5550 11700 5550
+Wire Wire Line
+	11500 5800 12500 5800
+Wire Wire Line
+	12500 5800 12500 5550
+Connection ~ 11500 5800
+Wire Wire Line
+	12500 5550 12700 5550
+Wire Wire Line
+	11500 6800 12500 6800
+Wire Wire Line
+	12500 6800 12500 6550
+Connection ~ 11500 6800
+Wire Wire Line
+	12500 6550 12700 6550
+Wire Wire Line
+	11500 7800 12500 7800
+Wire Wire Line
+	12500 7800 12500 7550
+Connection ~ 11500 7800
+Wire Wire Line
+	12500 7550 12700 7550
 $EndSCHEMATC
